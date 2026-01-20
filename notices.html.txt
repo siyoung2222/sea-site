@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>공지 관리자</title>
+</head>
+<body>
+
+<h2>공지사항 관리자</h2>
+
+<button id="logoutBtn">로그아웃</button>
+
+<hr>
+
+<h3>공지 작성</h3>
+<input id="title" placeholder="제목"><br><br>
+<textarea id="content" placeholder="내용" rows="6" cols="40"></textarea><br><br>
+
+<select id="status">
+  <option value="draft">비공개</option>
+  <option value="published">공개</option>
+</select><br><br>
+
+<button id="saveBtn">저장</button>
+
+<p id="msg"></p>
+
+<hr>
+
+<h3>공지 목록</h3>
+<ul id="list"></ul>
+
+<script type="module" src="./js/notices.js"></script>
+</body>
+</html>
